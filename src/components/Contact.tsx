@@ -9,7 +9,7 @@ export const Contact = () => {
             Get in Touch
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We'd love to hear from you. Reach out to learn more about Excellence Academy.
+            We'd love to hear from you. Reach out to learn more about Young and Wise Academy.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ export const Contact = () => {
               <Mail className="h-6 w-6 text-accent" />
             </div>
             <h3 className="text-lg font-semibold text-foreground mb-2">Email</h3>
-            <p className="text-muted-foreground">info@excellenceacademy.edu</p>
+            <p className="text-muted-foreground">info@youngandwise.edu</p>
           </div>
 
           <div className="text-center animate-fade-in p-6 rounded-lg hover:bg-accent/5 transition-smooth" style={{ animationDelay: "0.2s" }}>

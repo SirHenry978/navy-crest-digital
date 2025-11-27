@@ -22,7 +22,7 @@ export const Navbar = () => {
           <div className="flex items-center space-x-2">
             <GraduationCap className="h-8 w-8 text-accent" />
             <span className="text-xl font-display font-bold text-foreground">
-              Excellence Academy
+              Young and Wise Academy
             </span>
           </div>
 

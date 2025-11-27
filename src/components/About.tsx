@@ -30,7 +30,7 @@ export const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-            About Excellence Academy
+            About Young and Wise Academy
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             For over 50 years, we've been committed to providing an outstanding educational 
@@ -65,7 +65,7 @@ export const About = () => {
                 Our Mission
               </h3>
               <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                Excellence Academy is dedicated to fostering intellectual curiosity, 
+                Young and Wise Academy is dedicated to fostering intellectual curiosity, 
                 critical thinking, and personal growth in every student. We believe 
                 in creating a challenging yet nurturing environment where students 
                 can discover their passions and develop the skills needed to succeed 

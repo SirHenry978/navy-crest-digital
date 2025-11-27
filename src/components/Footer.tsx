@@ -10,7 +10,7 @@ export const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <GraduationCap className="h-6 w-6 text-accent" />
-              <span className="text-lg font-display font-bold">Excellence Academy</span>
+              <span className="text-lg font-display font-bold">Young and Wise Academy</span>
             </div>
             <p className="text-primary-foreground/80 text-sm">
               Empowering students to reach their full potential through excellence in education.
@@ -49,7 +49,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/60">
-          <p>&copy; {currentYear} Excellence Academy. All rights reserved.</p>
+          <p>&copy; {currentYear} Young and Wise Academy. All rights reserved.</p>
         </div>
       </div>
     </footer>
