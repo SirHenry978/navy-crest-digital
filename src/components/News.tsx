@@ -6,7 +6,7 @@ export const News = () => {
   const newsItems = [
     {
       date: "March 15, 2024",
-      title: "Excellence Academy Students Win State Science Fair",
+      title: "Young and Wise Academy Students Win State Science Fair",
       excerpt: "Three of our students took top honors at the state science competition with innovative research projects.",
       category: "Achievement"
     },
@@ -38,7 +38,7 @@ export const News = () => {
             Latest News & Events
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Stay updated with the latest happenings, achievements, and events at Excellence Academy.
+            Stay updated with the latest happenings, achievements, and events at Young and Wise Academy.
           </p>
         </div>
 
