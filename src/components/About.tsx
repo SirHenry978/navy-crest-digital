@@ -26,7 +26,7 @@ export const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-muted/30">
+    <section id="about" className="py-20 bg-white dark:bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
@@ -42,7 +42,7 @@ export const About = () => {
           {values.map((value, index) => (
             <Card 
               key={value.title}
-              className="p-6 text-center hover:shadow-elegant transition-smooth animate-scale-in bg-card hover:border-accent/50"
+              className="p-6 text-center hover:shadow-elegant transition-smooth animate-scale-in bg-white dark:bg-card border-2 hover:border-accent/50"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10">
@@ -58,7 +58,7 @@ export const About = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-card rounded-2xl p-8 md:p-12 shadow-elegant animate-fade-in">
+        <div className="mt-16 bg-gradient-to-br from-white to-white-soft dark:from-card dark:to-card rounded-2xl p-8 md:p-12 shadow-white dark:shadow-elegant animate-fade-in border-2 border-gray-100 dark:border-transparent">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-3xl font-display font-bold text-card-foreground mb-4">

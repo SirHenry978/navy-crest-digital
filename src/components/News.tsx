@@ -31,7 +31,7 @@ export const News = () => {
   ];
 
   return (
-    <section id="news" className="py-20 bg-muted/30">
+    <section id="news" className="py-20 bg-white dark:bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
@@ -46,7 +46,7 @@ export const News = () => {
           {newsItems.map((item, index) => (
             <Card 
               key={item.title}
-              className="p-6 hover:shadow-elegant transition-smooth animate-scale-in group cursor-pointer bg-card hover:border-accent/50"
+              className="p-6 hover:shadow-elegant transition-smooth animate-scale-in group cursor-pointer bg-white dark:bg-card border-2 hover:border-accent/50 shadow-white dark:shadow-none"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start justify-between mb-4">

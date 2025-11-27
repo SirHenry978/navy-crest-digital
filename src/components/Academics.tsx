@@ -59,7 +59,7 @@ export const Academics = () => {
           {programs.map((program, index) => (
             <Card 
               key={program.title}
-              className="p-6 hover:shadow-elegant transition-smooth animate-scale-in group cursor-pointer bg-card hover:border-accent/50"
+              className="p-6 hover:shadow-elegant transition-smooth animate-scale-in group cursor-pointer bg-white dark:bg-card border-2 hover:border-accent/50"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className={`mb-4 inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 group-hover:bg-accent/20 transition-smooth`}>

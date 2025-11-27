@@ -14,7 +14,7 @@ export const Contact = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="text-center animate-fade-in p-6 rounded-lg hover:bg-accent/5 transition-smooth">
+          <div className="text-center animate-fade-in p-6 rounded-lg hover:bg-accent/5 transition-smooth bg-white dark:bg-transparent border-2 border-transparent hover:border-accent/20 shadow-white dark:shadow-none">
             <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 mb-4">
               <Phone className="h-6 w-6 text-accent" />
             </div>
@@ -22,7 +22,7 @@ export const Contact = () => {
             <p className="text-muted-foreground">(555) 123-4567</p>
           </div>
 
-          <div className="text-center animate-fade-in p-6 rounded-lg hover:bg-accent/5 transition-smooth" style={{ animationDelay: "0.1s" }}>
+          <div className="text-center animate-fade-in p-6 rounded-lg hover:bg-accent/5 transition-smooth bg-white dark:bg-transparent border-2 border-transparent hover:border-accent/20 shadow-white dark:shadow-none" style={{ animationDelay: "0.1s" }}>
             <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 mb-4">
               <Mail className="h-6 w-6 text-accent" />
             </div>
@@ -30,7 +30,7 @@ export const Contact = () => {
             <p className="text-muted-foreground">info@youngandwise.edu</p>
           </div>
 
-          <div className="text-center animate-fade-in p-6 rounded-lg hover:bg-accent/5 transition-smooth" style={{ animationDelay: "0.2s" }}>
+          <div className="text-center animate-fade-in p-6 rounded-lg hover:bg-accent/5 transition-smooth bg-white dark:bg-transparent border-2 border-transparent hover:border-accent/20 shadow-white dark:shadow-none" style={{ animationDelay: "0.2s" }}>
             <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 mb-4">
               <MapPin className="h-6 w-6 text-accent" />
             </div>
