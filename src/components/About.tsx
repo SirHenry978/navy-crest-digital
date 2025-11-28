@@ -29,12 +29,14 @@ export const About = () => {
     <section id="about" className="py-20 bg-white dark:bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-            About Young and Wise Academy
-          </h2>
+          <div className="inline-block px-8 py-3 rounded-2xl bg-gradient-to-r from-primary to-navy-dark mb-6 shadow-card">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white">
+              About
+            </h2>
+          </div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             For over 50 years, we've been committed to providing an outstanding educational 
-            experience that shapes tomorrow's leaders and innovators.
+            experience that shapes tomorrow's leaders and innovators at Young and Wise Academy.
           </p>
         </div>
 
@@ -42,7 +44,7 @@ export const About = () => {
           {values.map((value, index) => (
             <Card 
               key={value.title}
-              className="p-6 text-center hover:shadow-elegant transition-smooth animate-scale-in bg-white dark:bg-card border-2 hover:border-accent/50"
+              className="p-6 text-center hover:shadow-card-hover transition-smooth animate-scale-in bg-gradient-to-br from-white to-blue-50 dark:from-card dark:to-navy-darker border-2 border-primary/20 hover:border-primary/50 hover:-translate-y-1"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10">

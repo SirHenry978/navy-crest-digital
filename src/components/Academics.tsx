@@ -46,9 +46,11 @@ export const Academics = () => {
     <section id="academics" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-            Academic Programs
-          </h2>
+          <div className="inline-block px-8 py-3 rounded-2xl bg-gradient-to-r from-primary to-navy-dark mb-6 shadow-card">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white">
+              Academic Programs
+            </h2>
+          </div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Comprehensive curriculum designed to challenge minds and inspire curiosity 
             across all disciplines.
@@ -59,7 +61,7 @@ export const Academics = () => {
           {programs.map((program, index) => (
             <Card 
               key={program.title}
-              className="p-6 hover:shadow-elegant transition-smooth animate-scale-in group cursor-pointer bg-white dark:bg-card border-2 hover:border-accent/50"
+              className="p-6 hover:shadow-card-hover transition-smooth animate-scale-in group cursor-pointer bg-gradient-to-br from-white to-blue-50 dark:from-card dark:to-navy-darker border-2 border-primary/20 hover:border-primary/50 hover:-translate-y-1"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className={`mb-4 inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 group-hover:bg-accent/20 transition-smooth`}>

@@ -45,17 +45,17 @@ export const Hero = () => {
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 pt-12 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.6s" }}>
-            <div className="text-center">
+            <div className="text-center p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-smooth shadow-card">
               <div className="text-4xl md:text-5xl font-display font-bold text-accent">98%</div>
-              <div className="text-white/80 mt-2">College Acceptance</div>
+              <div className="text-white dark:text-white/90 mt-2 font-medium">College Acceptance</div>
             </div>
-            <div className="text-center">
+            <div className="text-center p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-smooth shadow-card">
               <div className="text-4xl md:text-5xl font-display font-bold text-accent">15:1</div>
-              <div className="text-white/80 mt-2">Student-Teacher Ratio</div>
+              <div className="text-white dark:text-white/90 mt-2 font-medium">Student-Teacher Ratio</div>
             </div>
-            <div className="text-center">
+            <div className="text-center p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-smooth shadow-card">
               <div className="text-4xl md:text-5xl font-display font-bold text-accent">50+</div>
-              <div className="text-white/80 mt-2">Clubs & Activities</div>
+              <div className="text-white dark:text-white/90 mt-2 font-medium">Clubs & Activities</div>
             </div>
           </div>
         </div>

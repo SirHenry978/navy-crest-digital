@@ -34,9 +34,11 @@ export const News = () => {
     <section id="news" className="py-20 bg-white dark:bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-            Latest News & Events
-          </h2>
+          <div className="inline-block px-8 py-3 rounded-2xl bg-gradient-to-r from-primary to-navy-dark mb-6 shadow-card">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white">
+              Latest News & Events
+            </h2>
+          </div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Stay updated with the latest happenings, achievements, and events at Young and Wise Academy.
           </p>
@@ -46,7 +48,7 @@ export const News = () => {
           {newsItems.map((item, index) => (
             <Card 
               key={item.title}
-              className="p-6 hover:shadow-elegant transition-smooth animate-scale-in group cursor-pointer bg-white dark:bg-card border-2 hover:border-accent/50 shadow-white dark:shadow-none"
+              className="p-6 hover:shadow-card-hover transition-smooth animate-scale-in group cursor-pointer bg-gradient-to-br from-white to-blue-50 dark:from-card dark:to-navy-darker border-2 border-primary/20 hover:border-primary/50 hover:-translate-y-1"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start justify-between mb-4">
