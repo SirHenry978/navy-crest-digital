@@ -38,8 +38,9 @@ export const Hero = () => {
               size="lg"
               variant="outline"
               className="border-2 border-white text-white hover:bg-white hover:text-primary"
+              onClick={() => window.location.href = "/auth"}
             >
-              Explore Programs
+              Parent & Admin Portal
             </Button>
           </div>
 

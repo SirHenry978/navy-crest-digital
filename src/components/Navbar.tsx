@@ -12,6 +12,7 @@ export const Navbar = () => {
     { name: "Academics", href: "#academics" },
     { name: "News", href: "#news" },
     { name: "Contact", href: "#contact" },
+    { name: "Portal", href: "/auth" },
   ];
 
   return (
