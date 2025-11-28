@@ -61,7 +61,7 @@ export const Academics = () => {
           {programs.map((program, index) => (
             <Card 
               key={program.title}
-              className="p-6 hover:shadow-card-hover transition-smooth animate-scale-in group cursor-pointer bg-gradient-to-br from-white to-blue-50 dark:from-card dark:to-navy-darker border-2 border-primary/20 hover:border-primary/50 hover:-translate-y-1"
+              className="p-6 hover:shadow-card-hover transition-smooth animate-scale-in group cursor-pointer bg-gradient-to-br from-blue-50 to-blue-100 dark:from-card dark:to-navy-darker border-2 border-primary/30 hover:border-primary/60 hover:-translate-y-1"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className={`mb-4 inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 group-hover:bg-accent/20 transition-smooth`}>
