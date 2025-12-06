@@ -1,120 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 40% 98%;
     --foreground: 222 47% 11%;
-
+    
     --card: 0 0% 100%;
     --card-foreground: 222 47% 11%;
-
+    
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
-
-    --primary: 221 83% 25%;
-    --primary-foreground: 0 0% 100%;
-
+    
+    --primary: 217 91% 40%;
+    --primary-foreground: 210 40% 98%;
+    
     --secondary: 210 40% 96%;
     --secondary-foreground: 222 47% 11%;
-
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
-
-    --accent: 43 96% 56%;
+    
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    
+    --accent: 210 50% 93%;
     --accent-foreground: 222 47% 11%;
-
+    
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 221 83% 25%;
-
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 40%;
+    
     --radius: 0.75rem;
     
-    --navy-darker: 222 47% 11%;
-    --navy-dark: 221 83% 20%;
-    --navy: 221 83% 25%;
-    --navy-light: 221 83% 35%;
-    --gold: 43 96% 56%;
-    --gold-light: 43 96% 65%;
-    --white: 0 0% 100%;
-    --white-soft: 0 0% 98%;
+    --chart-1: 217 91% 40%;
+    --chart-2: 217 91% 55%;
+    --chart-3: 217 91% 70%;
+    --chart-4: 217 91% 30%;
+    --chart-5: 217 91% 25%;
     
-    --gradient-hero: linear-gradient(135deg, hsl(221 83% 25%) 0%, hsl(222 47% 11%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(43 96% 56%) 0%, hsl(43 96% 65%) 100%);
-    --gradient-white: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
-    
-    --shadow-elegant: 0 10px 40px -10px hsl(221 83% 25% / 0.3);
-    --shadow-glow: 0 0 40px hsl(43 96% 56% / 0.2);
-    --shadow-white: 0 4px 20px hsl(0 0% 0% / 0.08);
-    --shadow-card: 0 8px 30px -5px hsl(221 83% 25% / 0.15);
-    --shadow-card-hover: 0 12px 40px -8px hsl(221 83% 25% / 0.25);
-    
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Custom colors */
+    --gold: 45 93% 47%;
+    --gold-foreground: 222 47% 11%;
+    --fire: 25 95% 53%;
+    --fire-foreground: 210 40% 98%;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222 47% 11%;
+    --background: 222 47% 8%;
     --foreground: 210 40% 98%;
-
-    --card: 221 83% 15%;
+    
+    --card: 222 47% 11%;
     --card-foreground: 210 40% 98%;
-
-    --popover: 221 83% 15%;
+    
+    --popover: 222 47% 11%;
     --popover-foreground: 210 40% 98%;
-
-    --primary: 43 96% 56%;
+    
+    --primary: 217 91% 60%;
     --primary-foreground: 222 47% 11%;
-
-    --secondary: 221 83% 20%;
+    
+    --secondary: 217 33% 17%;
     --secondary-foreground: 210 40% 98%;
-
-    --muted: 221 83% 20%;
-    --muted-foreground: 220 9% 65%;
-
-    --accent: 43 96% 56%;
-    --accent-foreground: 222 47% 11%;
-
-    --destructive: 0 63% 31%;
+    
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    
+    --accent: 217 33% 20%;
+    --accent-foreground: 210 40% 98%;
+    
+    --destructive: 0 62% 50%;
     --destructive-foreground: 210 40% 98%;
+    
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 217 91% 60%;
+    
+    --chart-1: 217 91% 60%;
+    --chart-2: 217 91% 70%;
+    --chart-3: 217 91% 80%;
+    --chart-4: 217 91% 50%;
+    --chart-5: 217 91% 45%;
+    
+    --gold: 45 93% 55%;
+    --gold-foreground: 222 47% 11%;
+    --fire: 25 95% 60%;
+    --fire-foreground: 210 40% 98%;
 
-    --border: 221 83% 20%;
-    --input: 221 83% 20%;
-    --ring: 43 96% 56%;
-    
-    --navy-darker: 222 47% 8%;
-    --navy-dark: 221 83% 12%;
-    --navy: 221 83% 15%;
-    --navy-light: 221 83% 25%;
-    
-    --gradient-hero: linear-gradient(135deg, hsl(221 83% 15%) 0%, hsl(222 47% 8%) 100%);
-    --shadow-elegant: 0 10px 40px -10px hsl(0 0% 0% / 0.5);
-    --shadow-glow: 0 0 40px hsl(43 96% 56% / 0.3);
-    --shadow-card: 0 8px 30px -5px hsl(221 83% 25% / 0.3);
-    --shadow-card-hover: 0 12px 40px -8px hsl(221 83% 25% / 0.4);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -130,9 +113,9 @@ All colors MUST be HSL.
   * {
     @apply border-border;
   }
-
+  
   body {
-    @apply bg-background text-foreground font-body;
+    @apply bg-background text-foreground font-sans antialiased;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -141,39 +124,27 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  .gradient-hero {
-    background: var(--gradient-hero);
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent;
   }
   
-  .gradient-accent {
-    background: var(--gradient-accent);
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-gold to-fire bg-clip-text text-transparent;
   }
   
-  .gradient-white {
-    background: var(--gradient-white);
+  .glass {
+    @apply bg-background/80 backdrop-blur-md;
   }
   
-  .shadow-elegant {
-    box-shadow: var(--shadow-elegant);
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-md border border-border/50 shadow-xl;
   }
   
-  .shadow-glow {
-    box-shadow: var(--shadow-glow);
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
   }
   
-  .shadow-white {
-    box-shadow: var(--shadow-white);
-  }
-  
-  .shadow-card {
-    box-shadow: var(--shadow-card);
-  }
-  
-  .shadow-card-hover {
-    box-shadow: var(--shadow-card-hover);
-  }
-  
-  .transition-smooth {
-    transition: var(--transition-smooth);
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8;
   }
 }
